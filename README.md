@@ -5,3 +5,5 @@
 `triangles` - Classificação de triângulos
 
 `fizz-buzz-kata` - Resolução do Fizz Buzz utilizando TDD
+
+`income-tax` - Casos de teste para um algoritmo simples de cálculo de IR
