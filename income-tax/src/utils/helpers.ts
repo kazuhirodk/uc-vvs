@@ -5,5 +5,5 @@ export function generateArrayNumbers(
 ): number[] {
   return Array.from(
     Array(size)
-  ).map(x => Math.random() * (max - min) + min)
+  ).map(() => Math.random() * (max - min) + min)
 }

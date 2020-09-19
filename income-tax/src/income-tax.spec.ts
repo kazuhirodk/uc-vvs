@@ -17,13 +17,14 @@
 // Ran all test suites.
 
 import { calculateTax } from './income-tax'
+import { generateArrayNumbers } from './utils/helpers'
 
 describe('#calculateTax', () => {
   it('must calculate correctly for salary greater than 2000', () => {
     const valuesArray = [2001.0].concat(
-      Array.from(Array(10)).map( x => Math.random() * (10000 - 2001) + 2001 )
+      generateArrayNumbers(10, 2001, 10000)
     )
-    let calculatedTax: number = 0.0
+    let calculatedTax = 0.0
 
     valuesArray.forEach((salary) => {
       calculatedTax = 150 + (salary - 2000.0) * (0.20)
@@ -34,9 +35,9 @@ describe('#calculateTax', () => {
 
   it('must calculate correctly for values greater than 1000 and less or equal 2000', () => {
     const valuesArray = [1001.0, 2000.0].concat(
-      Array.from(Array(10)).map(x => Math.random() * (2000 - 1001) + 1001)
+      generateArrayNumbers(10, 1001, 2000)
     )
-    let calculatedTax: number = 0.0
+    let calculatedTax = 0.0
 
     valuesArray.forEach((salary) => {
       calculatedTax = (salary - 1000.0) * (0.15)
@@ -47,7 +48,7 @@ describe('#calculateTax', () => {
 
   it('must return zero if value is less os equal than 1000', () => {
     const valuesArray = [1000.0].concat(
-      Array.from(Array(10)).map(x => Math.random() * (1000 - 0) + 0)
+      generateArrayNumbers(10, 0, 1000)
     )
 
     valuesArray.forEach((salary) => {
