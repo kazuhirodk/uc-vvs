@@ -3,7 +3,7 @@
 ## FAST FAIL
 
 ```ruby
-class CoolFunctions do
+class CoolFunctions
   def softFunction()
     sleep(1)
     return true
