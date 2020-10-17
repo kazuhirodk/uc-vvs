@@ -7,3 +7,7 @@
 `fizz-buzz-kata` - Resolução do Fizz Buzz utilizando TDD
 
 `income-tax` - Casos de teste para um algoritmo simples de cálculo de IR
+
+`first-fail` - Exemplos de testes que furam os princípios FIRST
+
+`silly-pascal` - Particionamento por classes de equivalência usando Silly Pascal como exemplo
