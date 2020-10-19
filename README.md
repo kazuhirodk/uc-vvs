@@ -11,3 +11,7 @@
 `first-fail` - Exemplos de testes que furam os princípios FIRST
 
 `silly-pascal` - Particionamento por classes de equivalência usando Silly Pascal como exemplo
+
+`mutation-test` - Exemplo de teste de mutação usando styker (WIP)
+
+`bowling-kata` - Kata de Boliche
